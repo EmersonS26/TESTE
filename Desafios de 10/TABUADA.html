@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabuada</title>
+</head>
+<body>
+  <h1>Tabuada</h1>
+  <p>Digite um número para ver a tabuada:</p>
+  <input type="number" id="numeroDigitado">
+  <button onclick="exibirTabuada()">Exibir Tabuada</button>
+  <div id="tabuada"></div>
+
+  <script>
+    function exibirTabuada() {
+      const numeroDigitado = parseInt(document.getElementById("numeroDigitado").value);
+      const tabuadaDiv = document.getElementById("tabuada");
+
+      if (!isNaN(numeroDigitado)) {
+        tabuadaDiv.innerHTML = `<h2>Tabuada de ${numeroDigitado}</h2>`;
+        for (let i = 1; i <= 10; i++) {
+          const resultado = numeroDigitado * i;
+          tabuadaDiv.innerHTML += `<p>${numeroDigitado} x ${i} = ${resultado}</p>`;
+        }
+      } else {
+        tabuadaDiv.innerHTML = "<p>Por favor, digite um número válido.</p>";
+      }
+    }
+  </script>
+</body>
+</html>

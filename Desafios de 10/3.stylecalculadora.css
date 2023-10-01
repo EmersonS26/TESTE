@@ -1,0 +1,51 @@
+body {
+    background: rgb(152, 108, 108);
+
+}
+.wrapper {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(16, 16, 16);
+    padding:50px;
+    color:rgb(11, 152, 235);
+    text-align: center;
+    
+}
+.wrapper h2 {
+    text-transform: uppercase;
+    font-family: poppins;
+    margin-bottom: 10%;
+
+}
+input[type="text"] {
+    height:40%;
+
+}
+input[type="text"] {
+    font-size: 24px;
+
+}
+button {
+    background:orange;
+    border: none;
+    color: blue;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: poppins;
+    letter-spacing:2px;
+    font-weight: bold;
+
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+
+}
+b {
+    font-size: 30px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contagem Regressiva</title>
+</head>
+<body>
+  <h1>Contagem Regressiva</h1>
+  <p>Digite um número para iniciar a contagem regressiva:</p>
+  <input type="number" id="numeroDigitado">
+  <button onclick="iniciarContagemRegressiva()">Iniciar</button>
+  <p id="contagem"></p>
+
+  <script>
+    function iniciarContagemRegressiva() {
+      const numeroDigitado = parseInt(document.getElementById("numeroDigitado").value);
+      const contagemElement = document.getElementById("contagem");
+
+      if (!isNaN(numeroDigitado) && numeroDigitado > 0) {
+        let contador = numeroDigitado;
+        contagemElement.innerText = contador;
+
+        const intervalId = setInterval(function() {
+          contador--;
+          contagemElement.innerText = contador;
+
+          if (contador === 0) {
+            clearInterval(intervalId);
+            contagemElement.innerText = "Contagem regressiva concluída!";
+          }
+        }, 1000);
+      } else {
+        contagemElement.innerText = "Por favor, digite um número válido maior que zero.";
+      }
+    }
+  </script>
+</body>
+</html>
