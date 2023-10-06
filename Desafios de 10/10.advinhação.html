@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVINHAÇÃO</title>
+    <script src="javascript" type="text/javascript"></script>
+
+</head>
+<body>
+
+<script>
+//alert("VOU PENSAR EM UM NÚMERO E VOCÊ PRECISA ADVINHAR,OK? ")
+
+//const pc = Math.floor(Math.random() * (100 -1 +1)) + 1 ;
+//const falar = parseInt(prompt("EM QUE NÚMERO EU PENSEI?")) 
+//while(falar == pc){ break
+  //  document.write("Parabéns!!! <br> você acertou meu nobre!!! ") 
+    
+//}
+//while(falar < pc ){ 
+  //  document.write("Você está um pouco abaixo do resultado que pensei,vamos aumentar mais um pouco?")
+    //prompt("INSIRA O NÚMERO NOVAMENTE: ") 
+//}
+//else
+//{
+    
+//document.write("Você está um pouco acima do resultado que pensei,tente um valor menor,você consegue!")
+//prompt("INSIRA O NÚMERO NOVAMENTE: ")
+
+
+//}
+ 
+alert("VOU PENSAR EM UM NÚMERO E VOCÊ PRECISA ADVINHAR, OK?")
+
+const pc = Math.floor(Math.random() * 100) + 1;
+let tentativas = 0;
+
+while (true) {
+  const falar = parseInt(prompt("EM QUE NÚMERO EU PENSEI?"));
+
+  if (isNaN(falar) || falar < 1 || falar > 100) {
+    alert("Por favor, insira um número válido entre 1 e 100.");
+    continue;
+  }
+
+  tentativas++;
+
+  if (falar === pc) {
+    alert(`Parabéns!!! Você acertou meu nobre!!! Número de tentativas: ${tentativas}`);
+    break;
+  } else if (falar < pc) {
+    alert("Você está um pouco abaixo do número que pensei. Vamos aumentar um pouco mais.");
+  } else {
+    alert("Você está um pouco acima do número que pensei. Tente um valor menor, você consegue!");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
