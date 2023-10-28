@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha do personagem</title>
+</head>
+<body>
+    <script>
+        function personagem(nome,classe,elemento,alcance){
+            alert("Após essa tela de carregamento,escolha seu nickname e sua classe,divirta-se!")
+
+            var nome = prompt("Agora Digite seu NickName: ")
+            var classe = prompt("Escolha seu Personagem digitando: Mago,Guerreiro,Arqueiro,Mandarim,Espião")
+
+            this.nome = nome
+                this.classe = classe
+                this.elemento = elemento
+                this.alcance = alcance
+            
+
+            switch(classe){
+                case "Mago":
+                alert(`Classe escolhida: ${classe}`)
+                alert(`Atributos: ${elemento = "Cajado de Zeus"} , ${alcance = "Longa Distância"}`)
+                document.write("Conta criada com sucesso! Inicie sua Jornada! ")
+                break
+                
+
+                case "Guerreiro":
+                alert(`Classe escolhida: ${classe}`)
+                alert(`Atributos: ${elemento = "Espada-Excalibur"} , ${alcance = "Corpo a Corpo"}`)
+                document.write("Conta criada com sucesso! Inicie sua Jornada! ")
+                break
+                
+
+                case "Arqueiro":
+                alert(`Classe escolhida: ${classe}`)
+                alert(`Atributos: ${elemento = "Arco e Flecha"} , ${alcance = "Longa Distância"}`)
+                document.write("Conta criada com sucesso! Inicie sua Jornada! ")
+                break
+                
+
+                case "Mandarim":              
+                alert(`Classe escolhida: ${classe}`)
+                alert(`Atributos: ${elemento = "Bastão e Manoplas"} , ${alcance = "Média Distância"}`)
+                document.write("Conta criada com sucesso! Inicie sua Jornada! ")
+                break
+               
+
+                case "Espião":
+                alert(`Classe escolhida: ${classe}`)
+                alert(`Atributos: ${elemento = "ADAGAS"} , ${alcance = "Corpo a Corpo"}`)
+                document.write("Conta criada com sucesso! Inicie sua Jornada! ")
+                break
+
+                
+               
+            }
+            
+            }            
+            //END GAME,MY FRIEND!!!
+            personagem();
+            
+            
+            
+
+            
+         
+        
+        
+         
+        
+        
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>
